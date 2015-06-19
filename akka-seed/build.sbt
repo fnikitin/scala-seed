@@ -1,4 +1,4 @@
-name := "howdy-akka"
+name := "yo-barman"
 
 version := "1.0"
 
