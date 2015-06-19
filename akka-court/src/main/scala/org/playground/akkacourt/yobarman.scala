@@ -1,4 +1,4 @@
-package com.scalaapp
+package org.playground.akkacourt
 
 import akka.actor.{ActorSystem, ActorLogging, Actor, Props, ActorRef}
 
@@ -43,10 +43,10 @@ class Person extends Actor with ActorLogging {
   }
 }
 
-object HowdyAkka extends App {
+object YoBarmanApp extends App {
 
   // root object of our Akka Application, and is what all of our Actors will belong to
-  val system:ActorSystem = ActorSystem("howdy-akka")
+  val system:ActorSystem = ActorSystem("yo-barman")
 
   // attach a new Actor to the system
   val alice:ActorRef = system.actorOf(Props(new Person), "alice")
